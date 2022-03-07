@@ -2,6 +2,7 @@ header {
     height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
+    color: var(--color-white);
 }
 
 .header__container {
@@ -47,7 +48,6 @@ header {
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
 /* ============== ME ============= */
@@ -65,8 +65,7 @@ header {
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================ */
 
 @media screen and (max-width: 1024px ) {
-    header {
-    }
+    
 }
 
 /* ================= MEDIA QUERIES (SMALL DEVICES) ================ */
