@@ -34,12 +34,12 @@ export const LangProvider = ({ children }) => {
             case 'en-US':
                 setMessages( MessagesEnglish );
                 setLocale('en-US');
-                localStorage.setItem('lang', 'en-US')
+                localStorage.setItem('lang', 'en-US');
                 break;
             case 'es-MX':
                 setMessages( MessagesSpanish );
                 setLocale('es-MX');
-                localStorage.setItem('lang', 'es-MX')
+                localStorage.setItem('lang', 'es-MX');
                 break;
             
             default:
@@ -53,8 +53,6 @@ export const LangProvider = ({ children }) => {
     },[ locale, messages ])
 
 
-    console.log(locale);
-    console.log(messages)
     return (
         <langContext.Provider value={{
             setLanguage,

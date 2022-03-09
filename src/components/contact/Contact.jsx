@@ -1,12 +1,11 @@
-import React from 'react';
 import './contact.css';
+import Swal from 'sweetalert2';
+import emailjs from '@emailjs/browser';
+import * as Yup from 'yup';
 import { MdOutlineEmail } from 'react-icons/md';
 import { BsWhatsapp } from 'react-icons/bs';
 import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import * as Yup from 'yup'
 import { useFormik } from 'formik';
-import Swal from 'sweetalert2';
 import { FormattedMessage } from 'react-intl';
 
 

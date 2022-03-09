@@ -1,8 +1,8 @@
-import React from 'react'
-import './experience.css'
-import { BsPatchCheckFill } from 'react-icons/bs'
-import { FormattedMessage } from 'react-intl'
-import { backSkills, frontSkills } from './data'
+import './experience.css';
+import { BsPatchCheckFill } from 'react-icons/bs';
+import { FormattedMessage } from 'react-intl';
+import { backSkills, frontSkills } from './data';
+
 export const Experience = () => {
   return (
     <section id='experience' className='experience__section-container'>

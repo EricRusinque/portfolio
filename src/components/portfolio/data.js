@@ -1,7 +1,7 @@
-import Calendar from '../../assets/calendar.jpg'
-import Gif from '../../assets/gifapp.jpg'
-import Heroes from '../../assets/heroes.jpg'
-import Users from '../../assets/users.jpg'
+import Gif from '../../assets/gifapp.jpg';
+import Users from '../../assets/users.jpg';
+import Heroes from '../../assets/heroes.jpg';
+import Calendar from '../../assets/calendar.jpg';
 
 
 export const data = [

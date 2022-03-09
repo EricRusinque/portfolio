@@ -1,7 +1,6 @@
-import React from 'react';
 import './index.css';
-import { Portfolio, Nav, Header,Experience,Footer, Contact, About } from './components/exports'
 import {  LangProvider } from './context/langContext';
+import { Portfolio, Nav, Header,Experience,Footer, Contact, About } from './components/exports'
 
 export const App = () => {
 

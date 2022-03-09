@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
-import { FormattedMessage } from 'react-intl';
 import CV_ES from '../../assets/CV-ES.pdf';
 import CV_EN from '../../assets/CV-EN.pdf';
+
+import { useContext } from 'react';
+import { FormattedMessage } from 'react-intl';
 import { langContext } from '../../context/langContext';
 
 const CTA = () => {

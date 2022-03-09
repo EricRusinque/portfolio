@@ -1,11 +1,9 @@
-import React, { useContext } from 'react'
-import CTA from './CTA'
-import './header.css'
-import ME from '../../assets/me.png'
-import { HeaderSocials } from './HeaderSocials'
-import { langContext } from '../../context/langContext'
-import { FormattedMessage } from 'react-intl'
-import { Languages } from '../lang/Languages'
+import './header.css';
+import CTA from './CTA';
+import ME from '../../assets/me.png';
+import { HeaderSocials } from './HeaderSocials';
+import { FormattedMessage } from 'react-intl';
+import { Languages } from '../lang/Languages';
 
 export const Header = () => {
 

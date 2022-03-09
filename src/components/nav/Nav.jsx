@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
-import './nav.css'
-import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
-import { BiBook, BiMessageSquareDetail } from 'react-icons/bi'
-import { BsFiles } from 'react-icons/bs'
+import './nav.css';
+import { useState } from 'react';
+import { BsFiles } from 'react-icons/bs';
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
+import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
+
 export const Nav = () => {
 
   const [activeNav , setActiveNav ] = useState('#')

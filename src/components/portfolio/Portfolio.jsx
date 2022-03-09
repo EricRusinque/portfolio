@@ -1,7 +1,6 @@
-import React from 'react'
-import { FormattedMessage } from 'react-intl';
-import { data } from './data';
 import './portfolio.css';
+import { data } from './data';
+import { FormattedMessage } from 'react-intl';
 
 export const Portfolio = () => {
   return (

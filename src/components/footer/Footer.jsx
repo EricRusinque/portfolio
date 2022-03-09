@@ -1,9 +1,8 @@
-import React from 'react'
-import './footer.css'
-import { FaFacebook } from 'react-icons/fa'
-import { FiInstagram } from 'react-icons/fi'
-import { IoLogoTwitter } from 'react-icons/io' 
-import { FormattedMessage } from 'react-intl'
+import './footer.css';
+import { FaFacebook } from 'react-icons/fa';
+import { FiInstagram } from 'react-icons/fi';
+import { IoLogoTwitter } from 'react-icons/io'; 
+import { FormattedMessage } from 'react-intl';
 
 export const Footer = () => {
   return (

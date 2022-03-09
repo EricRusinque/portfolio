@@ -1,9 +1,9 @@
-import React from 'react'
-import './about.css'
-import ME from '../../assets/me.png'
-import { FaAward } from  'react-icons/fa'
-import { VscFolderLibrary } from  'react-icons/vsc'
-import { FormattedMessage } from 'react-intl'
+import './about.css';
+import ME from '../../assets/me.png';
+import { FaAward } from  'react-icons/fa';
+import { VscFolderLibrary } from  'react-icons/vsc';
+import { FormattedMessage } from 'react-intl';
+
 export const About = () => {
   return (
     <section id='about'>
