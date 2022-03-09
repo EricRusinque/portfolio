@@ -1,11 +1,39 @@
-import React from 'react';
-import CV from '../../assets/cv.pdf';
+import React, { useContext } from 'react';
+import { FormattedMessage } from 'react-intl';
+import CV_ES from '../../assets/CV-ES.pdf';
+import CV_EN from '../../assets/CV-EN.pdf';
+import { langContext } from '../../context/langContext';
 
 const CTA = () => {
+
+  const { locale } =  useContext(langContext)
+  console.log( locale );
   return (
     <div className='cta'>
-        <a href={CV} download className='btn'>Download CV</a>
-        <a href='#contact' className='btn btn-primary'>Let's talk</a>
+       {
+          locale === 'en-US'
+          ?
+            <a href={CV_EN} download className='btn'>
+            <FormattedMessage
+                id="cta.cv"
+                defaultMessage="Download CV (EN)"
+            />
+            </a>
+          :
+          
+           <a href={CV_ES} download className='btn'>
+           <FormattedMessage
+               id="cta.cv"
+               defaultMessage="Download CV (EN)"
+           />
+           </a>
+       }
+        <a href='#contact' className='btn btn-primary'>
+        <FormattedMessage
+              id="cta.talk"
+              defaultMessage="Let's talk"
+          />
+        </a>
     </div>
   )
 }

@@ -1,12 +1,23 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl';
 import { data } from './data';
 import './portfolio.css';
 
 export const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5>  
+        <FormattedMessage
+          id="port.sub" 
+          defaultMessage= "My Recent Works"           
+        />
+      </h5>
+      <h2>
+        <FormattedMessage
+          id="port.title" 
+          defaultMessage= "Portfolio"           
+        />
+      </h2>
 
       <div className='container portfolio__container'>
         {

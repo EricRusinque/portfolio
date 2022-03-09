@@ -1,24 +1,44 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import CTA from './CTA'
 import './header.css'
 import ME from '../../assets/me.png'
 import { HeaderSocials } from './HeaderSocials'
+import { langContext } from '../../context/langContext'
+import { FormattedMessage } from 'react-intl'
+import { Languages } from '../lang/Languages'
 
 export const Header = () => {
+
+
   return (
     <header>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h5>Eric Fernando</h5>
-        <h5 className="text-ligth">React Js Frontend Developer</h5>
+      <Languages/>
+        <h5>
+          <FormattedMessage 
+            id="app.welcome"
+            defaultMessage="Hello I'm"
+          />
+        </h5>
+        <h5>Eric Rusinque</h5>
+        <h5 className="text-ligth">
+          <FormattedMessage 
+            id="header.career"
+            defaultMessage="React Js Frontend Developer"
+          />
+        </h5>
         <CTA />
 
         <HeaderSocials/>
         <div className="me">
-          <img src={ME} alt='me' />
+          <img src={ME} alt='Eric Fernando Rusinque' />
         </div>
-
-        <a href='#contact' className='scroll__down'>Scroll Down</a>
+        <a href='#contact' className='scroll__down'>
+          <FormattedMessage
+            id="header.scroll"
+            defaultMessage="Scroll Down"
+          />
+        </a>
 
       </div>
     </header>
